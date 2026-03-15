@@ -1,6 +1,7 @@
 # Second-Hand-Book-Exchange-for-University-Students
 This is my 2nd year final semester project
 
+```text  
 bookbridge/
 │
 ├── index.php
@@ -26,7 +27,7 @@ bookbridge/
     ├── users
     ├── books
     └── categories
-
+```
 
 ## How Your Page Actually Runs
 
