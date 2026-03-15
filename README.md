@@ -32,15 +32,15 @@ bookbridge/
 ## How Your Page Actually Runs
 
 When you visits:
-
+```text  
 http://localhost/bookbridge/index.php
-
+```
 The execution happens top → bottom.
 
 # Step 1
-
+```text  
 require_once 'includes/header.php';
-
+```
 This loads:
 
 - HTML <head>
@@ -48,7 +48,7 @@ This loads:
 - navbar
 
 # Example:
-
+```text  
 <html>
 <head>
 <title>BookBridge</title>
@@ -56,29 +56,29 @@ This loads:
 </head>
 <body>
 <nav>...</nav>
-
+```
 # Step 2
-
+```text  
 require_once 'includes/db.php';
-
-This creates the database connection.
+```
+# This creates the database connection.
 
 Example inside db.php:
-
+```text  
 $pdo = new PDO(
 "mysql:host=localhost;dbname=bookbridge",
 "root",
 ""
 );
+```
 
-
-  Now the Database Query Runs
+# Now the Database Query Runs
 
 Your code:
-
+```text  
 $stmt = $pdo->query("SELECT b.*, c.name as category_name 
 FROM books b 
 LEFT JOIN categories c ON b.category_id = c.category_id 
 ORDER BY b.created_at DESC 
 LIMIT 6");
-
+```
