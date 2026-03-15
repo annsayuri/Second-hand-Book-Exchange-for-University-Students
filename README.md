@@ -29,7 +29,7 @@ bookbridge/
     └── categories
 ```
 
-## How Your Page Actually Runs
+# How Your Page Actually Runs
 
 When you visits:
 ```text  
@@ -37,7 +37,7 @@ http://localhost/bookbridge/index.php
 ```
 The execution happens top → bottom.
 
-# Step 1
+## Step 1
 ```text  
 require_once 'includes/header.php';
 ```
@@ -57,7 +57,7 @@ This loads:
 <body>
 <nav>...</nav>
 ```
-# Step 2
+## Step 2
 ```text  
 require_once 'includes/db.php';
 ```
