@@ -1,0 +1,9 @@
+| Concept              | Why it matters                  |
+| -------------------- | ------------------------------- |
+| `require_once`       | loads external PHP files safely |
+| `$pdo->query()`      | runs SQL query                  |
+| `fetchAll()`         | gets database results           |
+| `foreach`            | loops through books             |
+| `htmlspecialchars()` | prevents XSS security attacks   |
+| `number_format()`    | formats price nicely            |
+| `try / catch`        | handles database errors         |
