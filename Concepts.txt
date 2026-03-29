@@ -1,19 +1,21 @@
-| Concept              | Why it matters                  |
-| -------------------- | ------------------------------- |
-| `require_once`       | loads external PHP files safely |
-| `$pdo->query()`      | runs SQL query                  |
-| `fetchAll()`         | gets database results           |
-| `foreach`            | loops through books             |
-| `htmlspecialchars()` | prevents XSS security attacks   |
-| `number_format()`    | formats price nicely            |
-| `try / catch`        | handles database errors         |
-| `session_start()`      | starts user login session             |
-| `password_hash()`      | encrypts password before saving to DB |
-| `password_verify()`    | checks if login password is correct   |
-| `$_POST`               | gets data submitted from HTML forms   |
-| `$_SESSION`            | stores logged in user information     |
-| `header('Location:')` | redirects user to another page        |
-| `$pdo->prepare()`      | prepares safe SQL to prevent attacks  |
-| `move_uploaded_file()` | saves uploaded book image to server   |
-|session_start()         |  Opens the current session            |
-
+| Concept                     |Why it matters                        |
+| ----------------------      |--------------------------------------|
+| `require_once`              |loads external PHP files safely       |
+| `$pdo->query()`             |runs SQL query                        |
+| `fetchAll()`                |gets database results                 |
+| `foreach`                   |loops through books                   |
+| `htmlspecialchars()`        |prevents XSS security attacks         |
+| `number_format()`           |formats price nicely                  |
+| `try / catch`               |handles database errors               |
+| `session_start()`           |starts user login session             |
+| `password_hash()`           |encrypts password before saving to DB |
+| `password_verify()`         |checks if login password is correct   |
+| `$_POST`                    |gets data submitted from HTML forms   |
+| `$_SESSION`                 |stores logged in user information     |
+| `header('Location:')`       |redirects user to another page        |
+| `$pdo->prepare()`           |prepares safe SQL to prevent attacks  |
+| `move_uploaded_file()`      |saves uploaded book image to server   |
+| `session_start()`           |Opens the current session             |       
+| `session_destroy()`         |Deletes ALL session data              |  
+| `header('Location:...')`    |Redirects to homepage                 |
+| `exit()`                    |Stops any further code running        |
