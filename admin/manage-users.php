@@ -169,5 +169,3 @@ $users = $pdo->query("SELECT u.*,
 </div>
 
 <?php require_once '../includes/footer.php'; ?>
-```
-
