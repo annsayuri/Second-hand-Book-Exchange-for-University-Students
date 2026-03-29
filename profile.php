@@ -280,4 +280,15 @@ $avg_rating = count($reviews) > 0
                         <?php endforeach; ?>
                     <?php else: ?>
                     <div class="text-center py-4">
-                        <i class="fas fa-star fa-3x text-muted mb-3"></i
+                        <i class="fas fa-star fa-3x text-muted mb-3"></i>
+                        <p class="text-muted">No reviews yet! 😊</p>
+                    </div>
+                    <?php endif; ?>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<?php require_once 'includes/footer.php'; ?>
