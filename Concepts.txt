@@ -15,3 +15,5 @@
 | `header('Location:')` | redirects user to another page        |
 | `$pdo->prepare()`      | prepares safe SQL to prevent attacks  |
 | `move_uploaded_file()` | saves uploaded book image to server   |
+|session_start()         |  Opens the current session            |
+
