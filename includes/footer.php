@@ -43,7 +43,7 @@
 
         <hr class="border-secondary">
         <div class="text-center text-white-50 small">
-            <p class="mb-0">© 2025 BookBridge Sri Lanka. All rights reserved. 📚</p>
+            <p class="mb-0">© 2026 BookBridge Sri Lanka. All rights reserved. 📚</p>
         </div>
     </div>
 </footer>
