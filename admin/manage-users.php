@@ -171,8 +171,3 @@ $users = $pdo->query("SELECT u.*,
 <?php require_once '../includes/footer.php'; ?>
 ```
 
-Save **Ctrl + S** ✅
-
-Then open browser →
-```
-http://localhost/bookbridge/admin/manage-users.php
