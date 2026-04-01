@@ -11,6 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Our Custom CSS -->
     <link href="/bookbridge/assets/css/style.css" rel="stylesheet">
+    <script src="/bookbridge/assets/js/main.js" defer></script>
 </head>
 <body>
 
