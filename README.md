@@ -1,84 +1,99 @@
-# Second-Hand-Book-Exchange-for-University-Students
-This is my 2nd year final semester project
+# 📚 BookBridge Sri Lanka
 
-```text  
+A second-hand book exchange platform for university students in Sri Lanka.
+
+## 🌟 About The Project
+
+BookBridge Sri Lanka is a web-based platform that connects university 
+students who want to sell or exchange their used textbooks with students 
+who need them — at affordable prices.
+
+### 🎯 Problem It Solves
+University textbooks in Sri Lanka are expensive (LKR 1,500 - 8,000+).
+Students currently use disorganized WhatsApp groups to buy/sell books.
+BookBridge provides a dedicated, trusted marketplace solution!
+
+## ✨ Features
+
+- 👤 User Registration & Login
+- 📚 Post Books for Sale
+- 🔍 Search & Filter Books
+- 💬 Messaging System
+- ⭐ Seller Reviews & Ratings
+- 🔖 Wishlist
+- 🛡️ Admin Dashboard
+- 📱 Mobile Responsive
+
+## 🛠️ Built With
+
+- **Frontend:** HTML5, CSS3, JavaScript, Bootstrap 5
+- **Backend:** PHP 8.x
+- **Database:** MySQL 8.x
+- **Tools:** XAMPP/WAMP, VS Code, Git
+
+## 🗄️ Database Tables
+
+- `users` - Student accounts
+- `books` - Book listings
+- `categories` - Book categories
+- `messages` - User messages
+- `reviews` - Seller reviews
+- `wishlist` - Student wishlists
+
+## 🚀 How to Run Locally
+
+1. Clone the repository
+```bash
+git clone https://github.com/annsayuri/Second-hand-Book-Exchange-for-University-Students.git bookbridge
+```
+
+2. Move to WAMP/XAMPP www folder
+```bash
+C:\wamp64\www\bookbridge
+```
+
+3. Import database
+- Open phpMyAdmin or MySQL console
+- Create database `bookbridge_db`
+- Import `database/bookbridge_db.sql`
+
+4. Configure database connection
+- Open `includes/db.php`
+- Update username and password
+
+5. Run the project
+```
+http://localhost/bookbridge/
+```
+
+## 📁 Project Structure
+```
 bookbridge/
-│
-├── index.php
-├── listings.php
-├── book-detail.php
-├── register.php
-├── post-book.php
-│
-├── includes/
-│   ├── header.php
-│   ├── footer.php
-│   └── db.php
-│
-├── uploads/
-│   └── (book images)
-│
-├── assets/
-│   ├── css/
-│   ├── js/
-│   └── images/
-│
-└── database tables
-    ├── users
-    ├── books
-    └── categories
+├── admin/          → Admin panel
+├── assets/         → CSS, JS, Images
+├── includes/       → Reusable PHP files
+├── uploads/        → Book cover images
+├── database/       → SQL export file
+├── index.php       → Homepage
+├── register.php    → Registration
+├── login.php       → Login
+├── listings.php    → Browse books
+├── post-book.php   → Post a book
+├── book-detail.php → Book details
+├── profile.php     → User profile
+├── messages.php    → Messaging
+├── wishlist.php    → Wishlist
+├── review.php      → Reviews
+└── my-books.php    → My listings
 ```
 
-# How Your Page Actually Runs
+## 👩‍💻 Developer
 
-When you visits:
-```text  
-http://localhost/bookbridge/index.php
-```
-The execution happens top → bottom.
+- **Name:** Ann Sayuri
+- **Course:** Web Programming
+- **Year:** 2nd Year
+- **University:** BCI Campus, Negombo, Sri Lanka.
 
-## Step 1
-```text  
-require_once 'includes/header.php';
-```
-This loads:
+## 📄 License
 
-- HTML <head>
-- CSS
-- navbar
-
-# Example:
-```text  
-<html>
-<head>
-<title>BookBridge</title>
-<link rel="stylesheet" href="bootstrap.css">
-</head>
-<body>
-<nav>...</nav>
-```
-## Step 2
-```text  
-require_once 'includes/db.php';
-```
-# This creates the database connection.
-
-Example inside db.php:
-```text  
-$pdo = new PDO(
-"mysql:host=localhost;dbname=bookbridge",
-"root",
-""
-);
-```
-
-# Now the Database Query Runs
-
-Your code:
-```text  
-$stmt = $pdo->query("SELECT b.*, c.name as category_name 
-FROM books b 
-LEFT JOIN categories c ON b.category_id = c.category_id 
-ORDER BY b.created_at DESC 
-LIMIT 6");
-```
+This project is licensed under the MIT License.
