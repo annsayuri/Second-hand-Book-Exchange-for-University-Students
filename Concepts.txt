@@ -19,3 +19,4 @@
 | `session_destroy()`         |Deletes ALL session data              |  
 | `header('Location:...')`    |Redirects to homepage                 |
 | `exit()`                    |Stops any further code running        |
+
