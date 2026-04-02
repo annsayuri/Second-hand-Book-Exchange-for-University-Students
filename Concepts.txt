@@ -20,3 +20,24 @@
 | `header('Location:...')`    |Redirects to homepage                 |
 | `exit()`                    |Stops any further code running        |
 
+
+USE bookbridge_db;
+DELETE FROM users WHERE email = 'your_real_email@gmail.com';
+
+ALTER TABLE users AUTO_INCREMENT = 1;
+
+Export db again
+``` text
+"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqldump.exe" -u root -p bookbridge_db > C:\wamp64\www\bookbridge\database\bookbridge_db.sql
+```
+
+git add .
+git commit -m "Updated database export"
+git push origin main
+```
+
+---
+
+## 💡 Simple Rule:
+```
+Test → Delete → Export → Push! 😊
