@@ -1,9 +1,43 @@
-| Concept              | Why it matters                  |
-| -------------------- | ------------------------------- |
-| `require_once`       | loads external PHP files safely |
-| `$pdo->query()`      | runs SQL query                  |
-| `fetchAll()`         | gets database results           |
-| `foreach`            | loops through books             |
-| `htmlspecialchars()` | prevents XSS security attacks   |
-| `number_format()`    | formats price nicely            |
-| `try / catch`        | handles database errors         |
+| Concept                     |Why it matters                        |
+| ----------------------      |--------------------------------------|
+| `require_once`              |loads external PHP files safely       |
+| `$pdo->query()`             |runs SQL query                        |
+| `fetchAll()`                |gets database results                 |
+| `foreach`                   |loops through books                   |
+| `htmlspecialchars()`        |prevents XSS security attacks         |
+| `number_format()`           |formats price nicely                  |
+| `try / catch`               |handles database errors               |
+| `session_start()`           |starts user login session             |
+| `password_hash()`           |encrypts password before saving to DB |
+| `password_verify()`         |checks if login password is correct   |
+| `$_POST`                    |gets data submitted from HTML forms   |
+| `$_SESSION`                 |stores logged in user information     |
+| `header('Location:')`       |redirects user to another page        |
+| `$pdo->prepare()`           |prepares safe SQL to prevent attacks  |
+| `move_uploaded_file()`      |saves uploaded book image to server   |
+| `session_start()`           |Opens the current session             |       
+| `session_destroy()`         |Deletes ALL session data              |  
+| `header('Location:...')`    |Redirects to homepage                 |
+| `exit()`                    |Stops any further code running        |
+
+
+USE bookbridge_db;
+DELETE FROM users WHERE email = 'your_real_email@gmail.com';
+
+ALTER TABLE users AUTO_INCREMENT = 1;
+
+Export db again
+``` text
+"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqldump.exe" -u root -p bookbridge_db > C:\wamp64\www\bookbridge\database\bookbridge_db.sql
+```
+
+git add .
+git commit -m "Updated database export"
+git push origin main
+```
+
+---
+
+## 💡 Simple Rule:
+```
+Test → Delete → Export → Push! 😊
