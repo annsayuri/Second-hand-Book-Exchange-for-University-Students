@@ -3,10 +3,7 @@ require_once 'includes/header.php';
 require_once 'includes/db.php';
 
 // Only logged in users can post books
-if (!isset($_SESSION['user_id'])) {
-    header('Location: /bookbridge/login.php');
-    exit();
-}
+require_once 'includes/auth_check.php';
 
 $error   = "";
 $success = "";
