@@ -74,7 +74,7 @@ $rating = $rating_stmt->fetch();
                             <i class="fas fa-heart me-2"></i>Add to Wishlist
                         </a>
                         <a href="/bookbridge/review.php?seller=<?php echo $book['seller_id']; ?>&book=<?php echo $book['book_id']; ?>"
-                           class="btn btn-outline-warning mt-2">
+                           class="btn btn-outline-warning mt-2 w-100">
                             <i class="fas fa-star me-2"></i>Write a Review
                         </a>
                     </div>
