@@ -160,6 +160,11 @@ $books = $pdo->query("SELECT b.*, c.name as category_name,
                                    class="btn btn-sm btn-outline-primary mb-1">
                                     <i class="fas fa-eye"></i>
                                 </a>
+                                <!-- Edit -->
+                                <a href="/bookbridge/edit-book.php?id=<?php echo $book['book_id']; ?>"
+                                   class="btn btn-sm btn-outline-success mb-1">
+                                    <i class="fas fa-edit"></i>
+                                </a>
                                 <!-- Delete -->
                                 <a href="?delete=<?php echo $book['book_id']; ?>"
                                    class="btn btn-sm btn-danger mb-1"
