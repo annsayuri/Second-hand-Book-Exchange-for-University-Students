@@ -114,7 +114,7 @@ bookbridge/
 ## 👩‍💻 Developer
 
 - **Name:** Ann Sayuri S. kotikawaththa
-- **E-mail:** ```annsayu12@gmail.com```
+- **E-mail:** **[annsayu12@gmail.com](mailto:annsayu12@gmail.com)**
 - **Course:** Web Programming
 - **Year:** 2nd Year 2nd Semester
 - **University:** BCI Campus, Negombo, Sri Lanka.
