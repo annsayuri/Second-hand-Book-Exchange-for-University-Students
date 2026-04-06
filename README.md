@@ -5,11 +5,11 @@ A second-hand book exchange platform for university students in Sri Lanka.
 ## 🌟 About The Project
 
 BookBridge Sri Lanka is a web-based platform that connects university 
-students who want to sell or exchange their used textbooks with students 
+students who want to sell or exchange their used textbooks & reference books with students 
 who need them — at affordable prices.
 
 ### 🎯 Problem It Solves
-University textbooks in Sri Lanka are expensive (LKR 1,500 - 8,000+).
+University reference books in Sri Lanka are expensive (LKR 1,500 - 8,000+).
 Students currently use disorganized WhatsApp groups to buy/sell books.
 BookBridge provides a dedicated, trusted marketplace solution!
 
@@ -69,29 +69,54 @@ http://localhost/bookbridge/
 ## 📁 Project Structure
 ```
 bookbridge/
-├── admin/          → Admin panel
-├── assets/         → CSS, JS, Images
-├── includes/       → Reusable PHP files
-├── uploads/        → Book cover images
-├── database/       → SQL export file
-├── index.php       → Homepage
-├── register.php    → Registration
-├── login.php       → Login
-├── listings.php    → Browse books
-├── post-book.php   → Post a book
-├── book-detail.php → Book details
-├── profile.php     → User profile
-├── messages.php    → Messaging
-├── wishlist.php    → Wishlist
-├── review.php      → Reviews
-└── my-books.php    → My listings
+│
+├── admin/
+│   ├── dashboard.php          → Admin statistics and overview
+│   ├── manage-users.php       → View, delete and manage user roles
+│   └── manage-books.php       → View, edit, delete all book listings
+│
+├── assets/
+│   ├── css/style.css          → Custom styles and Bootstrap overrides
+│   ├── js/main.js             → Auto-hide alerts and UI interactions
+│   └── images/no-book.png     → Default placeholder image
+│
+├── database/
+│   └── bookbridge_db.sql      → Full MySQL database export
+│
+├── includes/
+│   ├── auth_check.php         → Reusable login protection
+│   ├── db.php                 → MySQL PDO database connection
+│   ├── header.php             → Navigation bar and HTML head
+│   └── footer.php             → Footer and Bootstrap JS
+│
+├── uploads/                   → Book cover images stored here
+│
+├── index.php                  → Homepage
+├── register.php               → Student registration
+├── login.php                  → Secure login
+├── logout.php                 → Session destroy
+├── listings.php               → Browse and filter books
+├── book-detail.php            → Full book details
+├── post-book.php              → Post a new book
+├── edit-book.php              → Edit book listing
+├── my-books.php               → Manage personal listings
+├── profile.php                → User profile
+├── messages.php               → In-platform messaging
+├── wishlist.php               → Saved wanted books
+├── review.php                 → Star ratings and reviews
+├── 404.php                    → Custom error page
+├── .gitignore                 → Git ignore rules
+├── Concepts.txt               → PHP concepts reference
+├── LICENSE                    → MIT License
+└── README.md                  → Project documentation
 ```
 
 ## 👩‍💻 Developer
 
-- **Name:** Ann Sayuri
+- **Name:** Ann Sayuri S. kotikawaththa
+- **E-mail:** ```annsayu12@gmail.com```
 - **Course:** Web Programming
-- **Year:** 2nd Year
+- **Year:** 2nd Year 2nd Semester
 - **University:** BCI Campus, Negombo, Sri Lanka.
 
 ## 📄 License
