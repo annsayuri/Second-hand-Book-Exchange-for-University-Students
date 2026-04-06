@@ -113,7 +113,7 @@ bookbridge/
 
 ## 👩‍💻 Developer
 
-- **Name:** Ann Sayuri S. kotikawaththa
+- **Name:** Ann Sayuri S. Kotikawaththa
 - **E-mail:** **[annsayu12@gmail.com](mailto:annsayu12@gmail.com)**
 - **Course:** Web Programming
 - **Year:** 2nd Year 2nd Semester
