@@ -13,6 +13,20 @@ University reference books in Sri Lanka are expensive (LKR 1,500 - 8,000+).
 Students currently use disorganized WhatsApp groups to buy/sell books.
 BookBridge provides a dedicated, trusted marketplace solution!
 
+## 📸 Screenshots
+
+| Homepage / Dashboard | Browse Books |
+| :---: | :---: |
+| ![Dashboard](assets/images/Dashboard.png) | ![Browse Books](assets/images/BrowseBooks.png) |
+
+| Post a Book | Messages |
+| :---: | :---: |
+| ![Post Book](assets/images/PostBook.png) | ![Messages](assets/images/Message.png) |
+
+| User Registration | Footer Section |
+| :---: | :---: |
+| ![Registration](assets/images/registration%20.png) | ![Bottom](assets/images/Bottom.png) |
+
 ## ✨ Features
 
 - 👤 User Registration & Login
