@@ -6,7 +6,7 @@ A second-hand book exchange platform for university students in Sri Lanka.
 
 BookBridge Sri Lanka is a web-based platform that connects university 
 students who want to sell or exchange their used textbooks & reference books with students 
-who need them — at affordable prices.
+who need them - at affordable prices.
 
 ### 🎯 Problem It Solves
 University reference books in Sri Lanka are expensive (LKR 1,500 - 8,000+).
