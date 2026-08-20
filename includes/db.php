@@ -3,7 +3,7 @@
 $host     = "localhost";
 $db_name  = "bookbridge_db";
 $username = "root";
-$password = "1234"; 
+$password = ""; 
 
 try {
     $pdo = new PDO(
